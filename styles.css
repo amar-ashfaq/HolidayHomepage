@@ -1,15 +1,16 @@
 body {
     margin: 0;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Work Sans";
     color: #1B1C1E;
-    min-width: 500px;
+    /*min-width: 500px;*/
 }
 
+/* ----- HERO SECTION ----- */
 #hero-section img {
     width: 100vw;
     max-width: 100%;
-    max-height: 100%;
+    /* max-height: 100%; */
     display: block; /* remove extra space below image */
 }
 
@@ -18,6 +19,8 @@ body {
     flex-direction: column;
     align-items: center;
     background: #ffffff;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #hero-title {
@@ -27,11 +30,13 @@ body {
 
 #hero-body-text {
     max-width: 100%;
-    width: 900px;
-    margin-top: 10px;
-    padding-bottom: 15px;
+    /*width: 900px;*/
+    margin-top: 0.625em;
+    padding-bottom: 0.937em;
+    line-height: 1.3;
 }
 
+/* ----- MAIN SECTION ----- */
 #main-section {
     width: 100%;
     height: 800px;
@@ -85,6 +90,7 @@ body {
     margin-bottom: 0;
 }
 
+/* ----- LOWER SECTION ----- */
 #lower-main-section {
     width: 100%;
     height: 450px;
@@ -136,6 +142,7 @@ body {
     margin-bottom: 0;
 }
 
+/* ----- FACTS AND ADVICE SECTION ----- */
 #facts-and-advice-section {
     display: flex;
     justify-content: center;
@@ -196,6 +203,7 @@ li {
     margin-top: 10px;
 }
 
+/* ----- FOOTER SECTION ----- */
 #footer-section {
     display: flex;
     justify-content: center;
@@ -210,4 +218,22 @@ li {
     padding-top: 20px;
     font-size: 20px;
     margin-bottom: 0;
+}
+
+/* ----- MEDIA QUERIES ----- */
+@media (min-width: 768px) {
+    #hero-body-text {
+        width: 900px;
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #hero-body-text {
+        width: 600px;
+    }
+
+    #hero-title {
+        font-size: 1.75rem;
+    }
 }
