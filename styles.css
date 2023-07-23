@@ -193,7 +193,7 @@ li {
 
 .list-container {
     display: flex;
-    width: 600px;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
     max-width: fit-content;
@@ -229,6 +229,8 @@ li {
     align-items: center;
     margin-top: 0;
     height: 125px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #project-credits {
@@ -266,5 +268,25 @@ li {
     .experience-name,
     .experience-desc {
         width: fit-content;
+    }
+
+    /* ----- FACTS AND ADVICE SECTION ----- */
+    #facts-and-advice-section {
+        display: block;
+    }
+
+    #facts-section,
+    #advice-section {
+        width: 100%;
+    }
+    
+    #facts-section-title,
+    #advice-section-title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .list-container {
+        width: 90%;
     }
 }
