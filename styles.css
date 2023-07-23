@@ -39,22 +39,24 @@ body {
 /* ----- MAIN SECTION ----- */
 #main-section {
     width: 100%;
-    height: 800px;
+    /* height: 800px; */
     background: #e7efe5;
 }
 
 #main-body-title {
+    font-size: 1.625rem;
     font-weight: 600;
     margin-top: 0;
-    padding-top: 20px;
-    font-size: 26px;
+    padding-top: 1.384em;
 }
 
 /* body */
 .main-section-images-row {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 1.875em;
+    flex-wrap: wrap;
+    column-gap: 2em;
 }
 
 .experience-img-card {
@@ -62,6 +64,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-basis: 30%;
+    margin-bottom: 2em;
 }
 
 .experience-img {
@@ -93,7 +97,7 @@ body {
 /* ----- LOWER SECTION ----- */
 #lower-main-section {
     width: 100%;
-    height: 450px;
+    /* height: 450px; */
     background: #f4edd8;
 }
 
@@ -108,6 +112,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
+    flex-wrap: wrap;
+    column-gap: 2em;
 }
 
 .market-img-card {
@@ -115,6 +121,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
 }
 
 .market-img {
@@ -147,7 +154,7 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    height: 600px;
+    /* height: 600px; */
 }
 
 li {
@@ -222,6 +229,7 @@ li {
 
 /* ----- MEDIA QUERIES ----- */
 @media (min-width: 768px) {
+    /* ----- HERO SECTION ----- */
     #hero-body-text {
         width: 900px;
         font-size: 1.25rem;
@@ -229,11 +237,12 @@ li {
 }
 
 @media (max-width: 767px) {
+    /* ----- HERO SECTION ----- */
     #hero-body-text {
         width: 600px;
     }
 
     #hero-title {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 }
